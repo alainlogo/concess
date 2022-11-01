@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { registerLocaleData } from '@angular/common';
 
 import localFr from '@angular/common/locales/fr';
+import { AdminModule } from './admin/admin.module';
+import { AdminRoutingModule } from './admin/admin-routing.module';
 
 registerLocaleData(localFr);
 
@@ -24,7 +26,10 @@ registerLocaleData(localFr);
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AdminModule,
+    AdminRoutingModule
+
   ],
   providers: [
     {provide : LOCALE_ID, useValue: 'fr-FR'}

@@ -14,11 +14,12 @@ import { AdminRoutingModule } from './admin-routing.module';
   ],
   imports: [
     CommonModule,
+    AdminRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     PipesModule,
     DirectivesModule,
-    AdminRoutingModule
+    AdminRoutingModule,
   ]
 })
 export class AdminModule { }

@@ -4,7 +4,7 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 
 
 const routes : Routes = [
-  { path: 'admin', loadChildren:() => import ('./admin.module') .then (m => m.AdminModule)},
+  { path: 'dashboard', component: DashboardComponent},
   { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   { path: '**', redirectTo: 'dashboard'},
 ]
